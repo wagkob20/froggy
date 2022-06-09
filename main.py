@@ -14,7 +14,7 @@ intents = discord.Intents.default()
 intents.members = True
 intents.all()
 
-client = commands.Bot(command_prefix = "PREFIX", intents = intents, help_command = None,  activity = discord.Streaming(name="Counter-Strike: Global Offensive ", url=TWITCH_URL_HERE))
+client = commands.Bot(command_prefix = "PREFIX", intents = intents, help_command = None,  activity = discord.Streaming(name=NAME, url=TWITCH_URL_HERE))
 #Playing -> activity = discord.Game(name="!help")
 #Streaming -> activity = discord.Streaming(name="!help", url="twitch_url_here")
 #Listening -> activity = discord.Activity(type=discord.ActivityType.listening, name="!help")
@@ -53,7 +53,7 @@ async def unban(ctx, *, member):
 @client.command()
 async def help(ctx):
     embed = discord.Embed(title="HELP", description=f"Here you find a full list of all bot commands sorted by permissions:", color=0x1e5e31)
-    embed.add_field(name= "PRÄFIX", value= "PREFIX", inline=False)
+    embed.add_field(name= "PREFIX", value= "PREFIX", inline=False)
     embed.add_field(name= "ADMIN", value= "ban, unban", inline=False)
     embed.add_field(name= "MODERATOR", value= "kick", inline=False)
     embed.add_field(name= "MEMBER", value= "ping, avatar", inline=False)
