@@ -69,7 +69,7 @@ async def assignRole(ctx, roleId : discord.Role):
 @client.command()
 async def help(ctx):
     embed = discord.Embed(title="HELP", description=f"Here you find a full list of all bot commands sorted by permissions:", color=0x1e5e31)
-    embed.add_field(name= "PRÄFIX", value= "PREFIX", inline=False)
+    embed.add_field(name= "PREFIX", value= "PREFIX", inline=False)
     embed.add_field(name= "ADMIN", value= "ban, unban, rules, assignRole", inline=False)
     embed.add_field(name= "MODERATOR", value= "kick, purge", inline=False)
     embed.add_field(name= "MEMBER", value= "ping, avatar, invite", inline=False)
